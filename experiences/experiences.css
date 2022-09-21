@@ -1,0 +1,167 @@
+* {
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: black;
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    padding:0.5%;
+    height: 2%;
+    color:white;
+    width: 100%;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide {
+    margin: 2%;
+}
+
+.titre {
+    font-size: 3rem;
+    font-weight: 50;
+    color: rgb(96, 222, 241);
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+
+.liens {
+    display: flex;
+    justify-content: center;
+    color: black;   
+    text-decoration: none;
+    color: white;
+    box-shadow: 10 10 10 10px rgb(50, 50, 50);
+}
+
+
+.logo img {
+    width:4%;
+}
+
+.logo {
+    margin: 15 0 0 0px;
+}
+
+
+
+.nav-bar img {
+    width: 40%;
+}
+
+.nav-bar a {
+    width: 5%;
+}
+.home{
+    padding-left: 1%;
+}
+
+title {
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.presentation img {
+    z-index: 1;
+}
+
+#image-central {
+    width: 20%;
+    opacity: 20%;
+    z-index: 1;
+    position: relative;
+    top: left;
+}
+
+#menu-hide {
+    position:fixed; 
+    z-index:9999; 
+    right:0%; 
+    top:auto; 
+    background:blueviolet; 
+    padding:4em 2em; 
+    width:15%; 
+    min-height:20%; 
+    box-shadow:1px 0 1px #9A2519;
+    list-style: none;
+    text-align: center;
+}
+
+
+#menu-hide a:hover{
+    color: rgb(29, 4, 52);
+}
+
+#menu-hide ul li {
+    list-style: none;
+}
+
+.container2 {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.experiences {
+    z-index: 3;
+    background-color: black;
+    margin: 1%;
+    text-align: center;
+    padding:3%;
+    width: 20%;
+    border: 1px solid rgb(96, 222, 241);
+    transition: background-color 0.5s;
+}
+.experiences:hover{
+    background-color: rgb(96, 222, 241);
+    color: black;
+    border: 1px solid rgb(96, 222, 241);}
+
+
+.title-experiences {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+
+.content-experiences ul li {
+    text-align: center;
+    list-style: none;
+    color:black;
+}
+
+.legend {
+    text-transform: uppercase;
+    color: white;
+    font-size: O.5rem;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    opacity: 30%;
+}
+
+.logos-footer {
+    display: flex;
+    justify-content: center;
+    opacity: 30%;
+
+}
+
+footer img{
+    width: 3%;
+}
+
