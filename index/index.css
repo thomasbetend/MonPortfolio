@@ -3,6 +3,14 @@
     text-align: center;
     text-decoration: none;
     color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-first: rgb(0, 127, 166);
+    --color-second: rgb(77, 222, 255) ;
 }
 
 body {
@@ -13,115 +21,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blueviolet;
+    background-color: var(--color-first);
     padding:0.5%;
     height: 2%;
-    color:white;
+    color:black;
     width: 100%;
 }
-
-.menu-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.slide {
-    margin: 2%;
-}
-
-.experiences {
-    box-shadow: 2px 2px 10px 1px rgb(200,200,200); 
-    background-color: rgb(229, 229, 229);
-    margin: 1%;
-    border-radius: 10px;
-    text-align: center;
-    padding:3%;
-    width: 2%;
-    font-size: 2rem;
-    text-align: center;
-    -webkit-line-clamp: 1;
-}
-.experiences:hover{
-background-color: rgb(150,150,150);
-color:white;
-}
-
-.titre {
-    font-size: 4rem;
-    font-weight: 50;
-    color: white;
-    margin-top: 3%;
-    text-transform: uppercase;
-}
-
-.langages {
-    text-transform: uppercase;
-    color: blueviolet;
-    font-size: 1.5rem;
-}
-
-button {  
-    color: black;
-    background-color: rgb(187, 187, 187);
-}
-
-button:hover {
-    background-color: rgb(128, 177, 177);
-  }
-
-.liens {
-    display: flex;
-    justify-content: center;
-    color: black;   
-    text-decoration: none;
-    color: white;
-    box-shadow: 10 10 10 10px rgb(50, 50, 50);
-}
-
-.btn {
-    margin: 2%;
-    background-color:black;
-    border: 1px solid blueviolet;
-    padding: 1%;
-    color: black;
-    width: 100px;
-   
-    transition: background-color 0.5s;
-}
-
-
-.btn1:hover{
-    background-color: rgb(96, 222, 241);
-    color: black;
-    border: 1px solid rgb(96, 222, 241);}
-
-
-.btn2:hover{
-        background-color: rgb(241, 96, 132);
-        color: black;
-        border: 1px solid rgb(241, 96, 132);}
-
-.btn3:hover{
-            background-color: rgb(202, 138, 65);
-            color: black;
-            border: 1px solid rgb(202, 138, 65);}
-
-#picture-full-page{
-    width: 100%;
-}
-
-#picture-full-page:hover {
-    opacity: 20%;
-}
-
-.logo img {
-    width:4%;
-}
-
-.logo {
-    margin: 15 0 0 0px;
-}
-
 
 .nav-bar img {
     width: 40%;
@@ -134,42 +39,128 @@ button:hover {
     padding-left: 1%;
 }
 
-title {
-    font-size: 2 rem;
-    z-index: 2;
+/*
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
 }
 
-.presentation img {
-    z-index: 1;
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: var(--color-second);
+    border-radius: 50%;
+    border: 0px;
 }
+
+.expand{
+    animation: Anim1 0.5s;
+    background: var(--color-first);
+    border: 1px solid var(--color-first);
+}
+
+@keyframes Anim1 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+*/
+
+.title {
+    font-size: 3rem;
+    font-weight: 50;
+    color: white;
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+.title2 {
+    text-transform: uppercase;
+    color: var(--color-second);
+    font-size: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    color: black;   
+    text-decoration: none;
+    color: white;
+    box-shadow: 10 10 10 10px rgb(50, 50, 50);
+}
+
+.btn {
+    margin: 2%;
+    background-color:black;
+    border: 1px solid var(--color-first);
+    padding: 1%;
+    color: black;
+    width: 100px;
+   
+    transition: background-color 0.5s;
+}
+
+
+.btn:hover{
+    background-color: var(--color-first);
+    color: black;
+    border: 1px solid var(--color-first)}
 
 #image-central {
     width: 50%;
 }
 
-#menu-hide {
+.menu-hide {
     position:fixed; 
     z-index:9999; 
-    right:0%; 
-    top:auto; 
-    background:blueviolet; 
-    padding:4em 2em; 
-    width:15%; 
-    min-height:20%; 
-    box-shadow:1px 0 1px #9A2519;
+    right:-250px; 
+    top:0px; 
+    background:var(--color-first); 
+    padding-right: 2%; 
+    width: 12%; 
+    height: 23%;
     list-style: none;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    transition: right 0.7s ease;
+}
+.link-black:hover{
+    color: black;
 }
 
-
-#menu-hide a:hover{
-    color: rgb(29, 4, 52);
+.active{
+    right: 0px;
 }
 
-#menu-hide ul li {
+.menu-hide img{
+    width: 15%;
+    padding: 2%;
+}
+
+#icone-menu-h{
+    text-align: right;
+    padding-top: 10px;
+}
+
+.menu-hide ul li {
     list-style: none;
+    text-align: right;
 }
-
 
 
 .logos-footer {
@@ -183,5 +174,52 @@ footer img{
     width: 3%;
 }
 
+#wrap:not(:target) {
+    transform: translate3d(-335px, 0, 0); /* cache l'élément #wrap */
+  }
+   
+#wrap:target {
+    transform: translate3d(0, 0, 0); /* affiche l'élément */
+  }
 
+@media screen and (max-width: 414px) {
+
+    .nav-bar img {
+        width: 80%;
+    }
+
+    .title{
+        margin-top: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 4em;
+    }
+
+    .title2{
+        margin-top: 3%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 1.5em;
+    }
+    
+    .btn{
+        display: none;
+    }
+
+    #image-central {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 80%;
+    }
+
+    footer img {
+        width: 10%
+    }
+
+    #menu-hide{
+        width: 45%;
+        height: 40%;
+        font-size: 2em;
+    }
+}
 

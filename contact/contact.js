@@ -1,15 +1,11 @@
-let pictureFullPage = document.getElementById('image-central');
+var openBtn = document.getElementById('icone-menu-b');
+var closeBtn = document.getElementById('icone-menu-h');
+var sideMenu = document.getElementById('menu-hide');
 
-pictureFullPage.addEventListener("mouseover", ()=>{
-    console.log("photo")
-}
-)
+openBtn.addEventListener("click", ()=>{
+    sideMenu.classList.add("active");
+        })
 
-let menuD = document.getElementById('menu-deroulant');
-let menuH = document.getElementById('menu-hide');
-
-menuD.addEventListener("onclick", ()=>{
-        menuH.style.display = 'none';
-        console.log("hello")
-}
-)
+closeBtn.addEventListener("click", ()=>{
+            sideMenu.classList.remove("active");
+                })
